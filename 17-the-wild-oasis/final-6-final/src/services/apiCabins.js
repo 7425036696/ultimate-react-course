@@ -18,6 +18,7 @@ console.log(newCabin)
     "/",
     ""
   );
+  console.log(`${supabaseUrl}/storage/v1/object/public/images/${imageName}`)
   const imagePath = hasImagePath
     ? newCabin.image
     : `${supabaseUrl}/storage/v1/object/public/images/${imageName}`;
